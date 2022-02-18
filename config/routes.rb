@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  resources :restaurants
-  resources :post_tweets
-  resources :message_tweets
-  resources :tweet_messages
   devise_for :users, path_prefix: "devise", controllers: { registrations: "registrations" }
 
   namespace :api, defaults: { format: :json } do

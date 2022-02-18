@@ -14,11 +14,13 @@ class Api::V1::PostTweetsController < ApplicationController
   end
 
   # POST /post_tweets
-  def create
+      def create
     @post_tweet = PostTweet.new(post_tweet_params)
+    user = User.find(params[:user_id])
+    @post_tweet.user_id = user.id
 
     if @post_tweet.save
-      render json: @post_tweet, status: :created, location: @post_tweet
+      render json: @post_tweet, status: :created, location: api_v1_post_tweets_url(@post_tweet)
     else
       render json: @post_tweet.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,6 @@ class Api::V1::PostTweetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_tweet_params
-      params.require(:post_tweet).permit(:body)
+      params.require(:post_tweet).permit(:body, :user_id)
     end
 end
