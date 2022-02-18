@@ -8,7 +8,7 @@ gem 'devise'
 gem 'rack-cors'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.3'
+gem 'rails', '~> 7.0.0.alpha2'
 gem "pg"
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
