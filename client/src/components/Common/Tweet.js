@@ -5,6 +5,7 @@ const Tweet = ({ tweet }) => {
   return (
     <div className="post">
       <p>{tweet.body}</p>
+      <p>{tweet.user_id}</p>
 
       <div className="author">
         <Like tweet={tweet} />

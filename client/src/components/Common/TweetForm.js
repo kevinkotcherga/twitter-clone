@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTweet } from "../../apis/tweet.action";
 
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-} from '@chakra-ui/react';
-
 const TweetForm = () => {
   const [body, setBody] = useState('');
   const dispatch = useDispatch();
