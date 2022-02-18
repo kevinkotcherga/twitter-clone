@@ -4,7 +4,6 @@ export const GET_TWEETS = "GET_TWEETS";
 export const ADD_TWEET = "ADD_TWEET";
 export const DELETE_TWEET = 'DELETE_TWEET';
 
-
 export const getTweets = () => {
   return (dispatch) => {
     return axios
