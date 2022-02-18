@@ -11,6 +11,8 @@
 		"heroku-postbuild": "npm run clean && npm run build && npm run deploy"
 	},
 	"dependencies": {
-		"@chakra-ui/system": "^1.10.3"
+		"@chakra-ui/system": "^1.10.3",
+		"@reduxjs/toolkit": "^1.7.2",
+		"react-redux": "^7.2.6"
 	}
 }

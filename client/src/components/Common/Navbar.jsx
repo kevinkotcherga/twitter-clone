@@ -22,8 +22,9 @@ import authenticationApi from '../../apis/authentication';
 import { resetAuthTokens } from '../../apis/axios';
 import { useUserState } from '../../contexts/user';
 import { Link } from 'react-router-dom';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
-const Links = ['QuickStart', 'Profile'];
+const Links = ['Accueil', 'Profile'];
 
 const NavLink = props => (
   <ChakraLink
@@ -38,7 +39,9 @@ const NavLink = props => (
     to={`/${props.link}`}
   >
     {props.link}
+
   </ChakraLink>
+
 );
 
 const Navbar = () => {
@@ -81,6 +84,7 @@ const Navbar = () => {
           </HStack>
           <Flex alignItems={'center'}>
             <Menu>
+              <ColorModeSwitcher justifySelf="flex-end" />
               <MenuButton
                 as={Button}
                 size={'sm'}
@@ -90,8 +94,8 @@ const Navbar = () => {
                 _hover={{ textDecoration: 'none' }}
               >
                 <Avatar size={'sm'} name={contact} />
-              </MenuButton>
-              <MenuList fontSize={17}>
+              </MenuButton >
+              <MenuList fontSize={17} >
                 <MenuItem as={Link} to="/profile">
                   My profile
                 </MenuItem>

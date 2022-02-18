@@ -16,6 +16,7 @@ import {
   ListItem
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 export default function CallToActionWithVideo() {
   return (
@@ -43,7 +44,7 @@ export default function CallToActionWithVideo() {
                 bg: 'red.400',
                 zIndex: -1,
               }}>
-              Quick Start
+              Twitter Clone
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
@@ -83,6 +84,15 @@ export default function CallToActionWithVideo() {
               as={Link}
               to="/signup">
               Sign up
+            </Button>
+            <Button rounded={'full'}
+              size={'lg'}
+              fontWeight={'normal'}
+              px={6} >
+              <ColorModeSwitcher rounded={'full'}
+              size={'lg'}
+              fontWeight={'normal'}
+              px={6} />
             </Button>
           </Stack>
         </Stack>

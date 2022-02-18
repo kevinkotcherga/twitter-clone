@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+PostTweet.destroy_all
+
+PostTweet.create(body: "Hey salut message message message message message message message message message !!")
+
+PostTweet.create(body: "Hey salut  salut salut salut salut salut message message message message message message message message message !!")
