@@ -1,10 +1,7 @@
 import React from "react";
-import { useUserState } from "../../contexts/user";
 import Like from "./Like";
 
 const Tweet = ({ tweet }) => {
-
-  const { user } = useUserState();
 
   return (
 
