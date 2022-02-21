@@ -5,6 +5,7 @@ import { isEmpty } from '../Common/Utils';
 import { Center } from '@chakra-ui/react'
 
 function MainSection() {
+
 	const tweets = useSelector(state => state.tweetReducer);
 
 	return (
@@ -14,7 +15,7 @@ function MainSection() {
           <div className="content">
             <div className="post-container">
               {!isEmpty(tweets) &&
-                tweets.map((tweet, index) => <Tweet tweet={tweet} key={index} />)}
+                tweets.map((tweet, index) => <Tweet tweet={tweet} key={index.id} />)}
             </div>
           </div>
         </div>

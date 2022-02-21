@@ -7,9 +7,9 @@ export const DELETE_TWEET = 'DELETE_TWEET';
 export const getTweets = () => {
   return (dispatch) => {
     return axios
-      .get('api/v1/post_tweets?_sort=id&_order=desc')
+      .get('api/v1/post_tweets')
       .then(res => {
-        dispatch({ type: GET_TWEETS, payload: res.data });
+        dispatch({ type: GET_TWEETS, payload: res.data});
       })
       .catch(err => console.log(err));
   };

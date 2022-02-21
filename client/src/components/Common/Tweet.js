@@ -4,10 +4,9 @@ import Like from "./Like";
 const Tweet = ({ tweet }) => {
 
   return (
-
     <div className="post">
       <p>{tweet.body}</p>
-      <p>{tweet.user_id}</p>
+      <p>{tweet.user.email}</p>
 
       <div className="author">
         <Like tweet={tweet} />

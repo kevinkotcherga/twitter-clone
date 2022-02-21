@@ -3,8 +3,7 @@ class Api::V1::PostTweetsController < ApplicationController
 
   # GET /post_tweets
   def index
-    @post_tweets = PostTweet.all
-
+    @post_tweets = PostTweet.all.to_json(include: :user)
     render json: @post_tweets
   end
 
