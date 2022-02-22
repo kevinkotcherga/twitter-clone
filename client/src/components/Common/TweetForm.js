@@ -12,7 +12,7 @@ const TweetForm = () => {
   if (body) {
     const data = {
       body,
-      user_id: '6745ff96-fea1-4442-8c74-d34a6d18b0b8',
+      user_id: 'f617d1e8-ab54-4093-8eb6-43a790672c28',
     };
 
     dispatch(addTweet(data));
@@ -22,9 +22,13 @@ const TweetForm = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={(e) => handleForm(e)}>
+      <form onSubmit={e => handleForm(e)}>
         <h1>Accueil</h1>
-        <textarea placeholder="Quoi de neuf ?" value={body} onChange={(e)=> setBody(e.target.value)}></textarea>
+        <textarea
+          placeholder="Quoi de neuf ?"
+          value={body}
+          onChange={e => setBody(e.target.value)}
+        ></textarea>
         <input type="submit" value="Tweeter" className="submit" />
       </form>
     </div>

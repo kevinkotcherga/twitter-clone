@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 class Api::V1::UsersController < Api::V1::BaseController
-  skip_before_action :authenticate_user!, only: [:create]
-  skip_before_action :authenticate_user_using_x_auth_token, only: [:create]
+  skip_before_action :authenticate_user!, only: [:create, :index, :show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user_using_x_auth_token, only: [:index, :show, :edit, :update, :destroy]
 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @users = User.all
+    render json: @users
+  end
 
   def show
     if @user

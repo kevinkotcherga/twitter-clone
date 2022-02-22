@@ -8,7 +8,9 @@
 User.destroy_all
 PostTweet.destroy_all
 
-User.create(email: 'example@example.com', password:'password', password_confirmation: 'password', first_name: 'Arnold', last_name: 'Schwarzenegger')
+User.create(email: 'example@example.com', password:'password', password_confirmation: 'password', first_name: 'Neil', last_name: 'Armstrong')
+User.create(email: 'test@example.com', password:'password', password_confirmation: 'password', first_name: 'Youri', last_name: 'Gagarine')
+User.create(email: 'test@test.com', password:'password', password_confirmation: 'password', first_name: 'Jean', last_name: 'User')
 
-PostTweet.create(body: 'Words words words', user: User.first)
-PostTweet.create(body: 'Hey hello !', user: User.first)
+PostTweet.create(body: "Salut, c'est mon premier tweet !", user: User.first)
+PostTweet.create(body: 'Voici un message ! =)', user: User.last)

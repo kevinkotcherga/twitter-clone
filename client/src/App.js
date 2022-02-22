@@ -10,7 +10,7 @@ import { UserProvider } from './contexts/user';
 function App(props) {
 
   useEffect(() => {
-    fetch('api/v1/post_tweets')
+    fetch('api/v1/users')
       .then(res => res.json())
       .then(data => console.log(data));
   }, []);

@@ -10,7 +10,8 @@ Rails.application.routes.draw do
       end
 
       resources :post_tweets
-      resources :users, only: [:show, :create, :update, :destroy], constraints: { id: /.*/ }
+      resources :members
+      resources :users, only: [:index, :show, :create, :update, :destroy], constraints: { id: /.*/ }
       resources :notes, only: [:index, :create] do
         collection do
           post 'bulk_delete'

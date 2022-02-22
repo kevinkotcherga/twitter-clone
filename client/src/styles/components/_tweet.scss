@@ -5,6 +5,10 @@
   padding-bottom: 60px;
   width: 100%;
 
+  .link:hover {
+    text-decoration: underline;
+  }
+
   .edit-delete {
     position: absolute;
     right: 20px;
