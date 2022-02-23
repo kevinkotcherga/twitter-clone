@@ -85,15 +85,6 @@ export default function CallToActionWithVideo() {
               to="/signup">
               Sign up
             </Button>
-            <Button rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
-              px={6} >
-              <ColorModeSwitcher rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
-              px={6} />
-            </Button>
           </Stack>
         </Stack>
         <Flex
@@ -118,18 +109,6 @@ export default function CallToActionWithVideo() {
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}>
-            <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'50%'}
-              top={'50%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            />
             <Image
               alt={'Hero Image'}
               fit={'cover'}
