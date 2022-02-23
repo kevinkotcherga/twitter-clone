@@ -53,12 +53,11 @@ export default function CallToActionWithVideo() {
           </Heading>
           <Flex justifyContent="center" textAlign="left">
             <UnorderedList>
-              <ListItem>Uses React on Front-end.</ListItem>
-              <ListItem>Uses Context API for state management.</ListItem>
-              <ListItem>Uses Rails on Back-end.</ListItem>
-              <ListItem>Uses ChakraUI for UI.</ListItem>
-              <ListItem>Uses Devise for User authentication(token based).</ListItem>
-              <ListItem>Uses PostgreSQL database.</ListItem>
+              <ListItem>React en Front-end.</ListItem>
+              <ListItem>Rails en Back-end.</ListItem>
+              <ListItem>ChakraUI pour l'UI.</ListItem>
+              <ListItem>Devise pour l'User authentication(token based).</ListItem>
+              <ListItem>PostgreSQL pour la database.</ListItem>
             </UnorderedList>
           </Flex>
           <Stack
