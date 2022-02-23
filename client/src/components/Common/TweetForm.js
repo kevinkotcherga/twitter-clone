@@ -12,7 +12,7 @@ const TweetForm = () => {
   if (body) {
     const data = {
       body,
-      user_id: 'f617d1e8-ab54-4093-8eb6-43a790672c28',
+      user_id: '01b964a6-33ca-4db9-8e1a-229cc060d781',
     };
 
     dispatch(addTweet(data));
