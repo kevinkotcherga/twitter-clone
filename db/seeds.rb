@@ -8,10 +8,10 @@
 User.destroy_all
 PostTweet.destroy_all
 
-User.create(email: 'test@example.com', password:'password', password_confirmation: 'password', first_name: 'Youri', last_name: 'Gagarine')
+u = User.create(email: 'test@example.com', password:'password', password_confirmation: 'password', first_name: 'Youri', last_name: 'Gagarine')
 User.create(email: 'test@test.com', password:'password', password_confirmation: 'password', first_name: 'Antoine', last_name: 'User')
-User.create(email: 'exercice@exercice.com', password:'password', password_confirmation: 'password', first_name: 'Neil', last_name: 'Armstrong')
+s = User.create(email: 'exercice@exercice.com', password:'password', password_confirmation: 'password', first_name: 'Neil', last_name: 'Armstrong')
 
-PostTweet.create(body: "Salut, c'est mon premier tweet !", user: User.first)
-PostTweet.create(body: 'Voici un message ! =)', user: User.last)
-PostTweet.create(body: "Quelqu'un connait un bon resto italien dans le 11ème ?", user: User.last)
+PostTweet.create(body: "Salut, c'est mon premier tweet !", user: u)
+PostTweet.create(body: 'Voici un message ! =)', user: s)
+PostTweet.create(body: "Quelqu'un connait un bon resto italien dans le 11ème ?", user: s)
