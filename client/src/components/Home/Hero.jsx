@@ -57,7 +57,7 @@ export default function CallToActionWithVideo() {
               <ListItem>Rails en Back-end.</ListItem>
               <ListItem>ChakraUI pour l'UI.</ListItem>
               <ListItem>Devise pour l'User authentication(token based).</ListItem>
-              <ListItem>PostgreSQL pour la database.</ListItem>
+              <ListItem>PostgreSQL en database.</ListItem>
             </UnorderedList>
           </Flex>
           <Stack
